@@ -1,2 +1,2 @@
 # medical-reminder-app
-Vertual Nurse
+Virtual Nurse
