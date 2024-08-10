@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Londrina+Outline&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Londrina+Outline&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {margin:0;
+  padding: 0;
   font-style: normal;
 }
 
@@ -10,14 +10,15 @@
   flex-direction: column;
 }
 .logo {
-  display: flex;
-  flex-direction: row;
+ 
+  font-family: "Orbitron", sans-serif;
   margin-left: 3rem;
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  font-weight: 900;
-  color: hsl(204, 74%, 12%);
+  font-size: 2.3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #08233b;
 }
+
 
 .container {
   display: flex;
@@ -25,18 +26,22 @@
   align-items: center;
   justify-content: center;
 }
-.heading {
-  font-size: 1.5em;
+.title {
+  font-size: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
+
 .box {
   -width: 100%;
   display: flex;
   gap: 3em;
 }
+
 .student {
   display: flex;
   align-items: center;
@@ -79,4 +84,20 @@ img {
   font-size: 1em; /* Increase the text size */
   text-align: center;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.title{
+     margin:1em;
+}
+
+.title1{
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+    margin-bottom:1em;
 }
