@@ -7,6 +7,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
+app.get("/role", (req, res) => {
+  res.render("landing.ejs");
+});
+
 app.get("/sLogin", (req, res) => {
   res.render("sLogin.ejs");
 });
