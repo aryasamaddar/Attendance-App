@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "**Attendify** is a sleek, modern attendance tracking app designed to simplify the attendance process for both teachers and students. With Attendify, teachers can effortlessly generate unique OTPs for each class session, allowing students to mark their attendance quickly and securely.",
   "main": "app.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
