@@ -11,6 +11,6 @@
 
 ## Tech Stack 🛠️
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: EJS, CSS, JavaScript
 - **Backend**: Node.js, Express.js
 - **Database**: Mongo db
