@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendify</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">ATTENDIFY</div>
+      <div class="message">
+        <p>Welcome Back</p>
+      </div>
+      <div class="line"><p>We’re thrilled to see you again. Dive right in and pick up where you left off!</p></div>
+      <div class="hero">
+        <div class="form">
+          <!-- Log In Form -->
+          <form id="login-form" action="/login" method="post">
+            <p class="log-text">Log In</p>
+            <input
+              type="email"
+              placeholder="eg@email.com"
+              name="email"
+              required
+              class="input"
+            /><br />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+              class="input"
+            /><br />
+            <div class="button-container">
+              <button type="submit" class="login-btn" data-action="login">
+                submit
+              </button>
+              <div class="oAuth2">
+                <div class="or-text">or you can continue with :</div>
+                <a href="https://www.google.co.in/" target="_blank"
+                  ><img src="/img/google.png" alt="google"
+                /></a>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="/img/facebook.png" alt="facebook"
+                /></a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="img"><img src="/img/student.png" alt="student img" /></div>
+      </div>
+      <div class="footer">
+        *If you do not have an account, <a href="/sRegister">click here</a> to
+        register
+      </div>
+    </div>
+    <script src="/scripts/sRFegister.js"></script>
+  </body>
+</html>
