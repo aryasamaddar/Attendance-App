@@ -11,7 +11,11 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/roles",(req,res)=>{
-    res.render("landing.ejs");
+    res.render("roles.ejs");
+})
+
+app.get("/dashboard",(req,res)=>{
+    res.render("dashboard.ejs",{sts: "0"});
 })
 
 app.use(studentRoutes);

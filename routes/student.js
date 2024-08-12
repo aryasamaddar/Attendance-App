@@ -20,11 +20,14 @@ router.post("/sRegister", async (req, res) => {
   const userExists = await collection.findOne({ email: data.email });
 
   if (userExists) {
-    res.send("User exists");
+    // res.send("User exists");
+    res.render("dashboard.ejs", { sts: "User exists" });
+
   } else {
     const userdata = await collection.insertMany(data);
     console.log(userdata);
-    res.send("Account created");
+    // res.send("Account created");
+    res.render("dashboard.ejs", { sts: "Account created" });
   }
 });
 
