@@ -1,10 +1,11 @@
-const dotenv = require('dotenv').config();
-const mongoose = require('mongoose');
+import dotenv from 'dotenv';
+import mongoose from 'mongoose';
+
+dotenv.config();
 const connect = mongoose.connect(process.env.MONGO_URL);
 connect.then(() => {
     console.log("Database connected successfully");
 })
-
 .catch(() => {
     console.log("Cannot connect to databse");
 });
@@ -30,4 +31,4 @@ const SigninSchema = new mongoose.Schema({
 
 const collection = new mongoose.model("users", SigninSchema);
 
-module.exports = collection;
+export default collection;

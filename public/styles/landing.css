@@ -46,24 +46,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 4px solid black;
+  border: 4px solid #0000006a;
   padding: 1em;
   border-radius: 10%;
   height: 14rem;
   width: 14rem;
   cursor: pointer;
 }
+
+.student:hover{
+  border: 4px solid #000000;
+}
+
 .teacher {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 4px solid hsla(0, 0%, 0%, 0.414);
+  border: 4px solid #0000006a;
   padding: 1em;
   border-radius: 10%;
   height: 14rem;
   width: 14rem;
   cursor: pointer;
 }
+
+.teacher:hover{
+  border: 4px solid #000000;
+}
+
 img {
   height: 10rem;
 }

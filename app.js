@@ -1,7 +1,6 @@
-const express = require('express');
-const path = require('path');
-const studentRoutes = require('./routes/student')
-const teacherRoutes = require('./routes/teacher')
+import express from 'express';
+import studentRoutes from './routes/student.js'
+import teacherRoutes from './routes/teacher.js'
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,12 +10,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
 app.get("/roles",(req,res)=>{
     res.render("landing.ejs");
 })
+
 app.use(studentRoutes);
 app.use(teacherRoutes);
 
