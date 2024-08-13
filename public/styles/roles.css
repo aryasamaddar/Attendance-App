@@ -8,17 +8,22 @@
 .main {
   display: flex;
   flex-direction: column;
-}
+} 
 .logo {
   cursor: pointer;
   font-family: "Orbitron", sans-serif;
-  margin-left: 3rem;
-  font-size: 2.3rem;
-  margin-top: 2rem;
+  font-size: 2rem;
   font-weight: 600;
-  color: #08233b;
+  color: #00233b;
+  margin: 1.1rem 0rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px;
 }
 
+hr {
+  opacity: 0.4;
+}
 
 .container {
   display: flex;
