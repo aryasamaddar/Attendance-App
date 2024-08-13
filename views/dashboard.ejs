@@ -4,14 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATTENDIFY</title>
+    <link rel="stylesheet" href="styles/dashboard.css" />
   </head>
   <body>
-    <h1>Can't you wait a bit MF</h1>
+    <header>
+      <div class="menu" id="menu">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+      </div>
+      <div class="logo">ATTENDIFY</div>
+      <div class="profile">
+        <a href="/profle">
+          <img src="img/teacher.png" alt="Profile Picture"
+        /></a>
+      </div>
+    </header>
+    <hr />
+
     <script>
-      if ("<%= sts %>" != "0") {   
+      if ("<%= sts %>" != "0") {
         alert("<%= sts %>");
         window.location.href = "/dashboard";
       }
     </script>
+    <script src="scripts/dashboard.js"></script>
   </body>
 </html>

@@ -11,16 +11,22 @@
 
 body {
   background-color: #ffffff;
-}
+} 
 
 .logo {
+  cursor: pointer;
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #00233b;
-  margin-left: 3rem;
-  font-size: 2.3rem;
-  margin-top: 2rem;
+  margin: 1.1rem 0rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px;
+}
+
+hr {
+  opacity: 0.4;
 }
 
 .message {
@@ -28,6 +34,7 @@ body {
   justify-content: center;
   font-size: 3.5rem;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .hero {
@@ -41,11 +48,6 @@ body {
   display: flex;
 }
 
-img {
-  width: 15rem;
-  height: 15rem;
-}
-
 .img {
   display: flex;
   align-items: center;
@@ -55,6 +57,23 @@ img {
   margin-left: 4rem;
   border: black solid 4px;
   border-radius: 10%;
+  box-shadow: 3px 3px 10px 2px;
+  transition: transform 1s ease, box-shadow 1s ease; 
+}
+
+.img img {
+  width: 15rem;
+  height: 15rem;
+  transition: transform 1s ease; 
+}
+
+.img:hover {
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img:hover img {
+  transform: rotateY(180deg);
 }
 
 .form {
@@ -63,13 +82,15 @@ img {
   margin-right: 4rem;
 }
 
-.line{
-    text-align: center;
-    margin-bottom: 2rem;
+.line {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .log-text {
   font-size: 2.3rem;
+  margin-bottom: 1rem;
 }
 
 .input {
@@ -80,6 +101,28 @@ img {
   width: 18rem;
   font-size: 1rem;
   border-radius: 0.8rem;
+}
+
+@keyframes focus-grow {
+  0% {
+    transform: scale(1);
+    border-color: #000000;
+  }
+  50% {
+    transform: scale(1.05);
+    border-color: #00233b;
+  }
+  100% {
+    transform: scale(1);
+    border-color: #000000;
+  }
+}
+
+.input:focus {
+  animation: focus-grow 0.3s ease-in-out;
+  outline: none; 
+  border-color: #00233b;
+  box-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
 button {
@@ -95,7 +138,24 @@ button {
   font-size: 1em;
   text-align: center;
   cursor: pointer;
-  font-family: "Poppins",  sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2); 
+}
+
+/* Button animation on hover */
+button:hover {
+  transform: scale(1.1);
+  background-color: #00233b;
+  color: #ffffff;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4); 
+}
+
+/* Button animation on click */
+button:active {
+  transform: scale(0.95);
+  background-color: #001f2c;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .oAuth2 {
@@ -119,5 +179,5 @@ button {
 .footer {
   text-align: center;
   color: #aaa;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
